@@ -28,22 +28,17 @@ A Processing program also displays the glider's real-time position and orientati
 - Arduino / C++
 - Processing
 
-## Visualisation
 
-![Processing Visualisation](images/processing-visualisation.png)
+The system was tested by manually disturbing the glider from its neutral
+orientation and observing the response of the control system.
 
-## Glider
+The controller responds to changes in pitch and roll by commanding the
+appropriate control surfaces to return the glider towards its target
+orientation.
 
-![Glider](images/glider.jpg)
-
-## Project Structure
+Example serial output:
 
 ```text
-Self-Stabilising-Glider/
-├── Arduino/
-│   └── Arduino-MPU6050.ino
-├── Processing/
-│   └── GliderVisualisation.pde
-├── images/
-├── README.md
-└── .gitignore
+Pitch: 4.21 | Roll: -2.83 | Pitch PID: -8.42 | Roll PID: 5.66
+Pitch: 2.74 | Roll: -1.61 | Pitch PID: -4.32 | Roll PID: 3.21
+Pitch: 0.91 | Roll: -0.52 | Pitch PID: -1.82 | Roll PID: 1.04
