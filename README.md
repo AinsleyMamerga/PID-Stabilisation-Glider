@@ -1,6 +1,5 @@
 # PID-Stabilisation-Glider 
 
-# Self-Stabilising Glider
 
 A model glider that uses an MPU6050 and PID control to automatically correct its pitch and roll.
 
